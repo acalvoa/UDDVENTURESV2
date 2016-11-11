@@ -1,0 +1,178 @@
+@import "../../base/css/base.less";
+.EXTEND_search{
+	position: relative;
+	min-height: 704px;
+	height: auto;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	.search_header{
+		margin-top: 30px;
+		background: #CCCCCC;
+		height: 50px;
+		font-size: 16px;
+		color:#FFF;
+		font-weight: bold;
+		border-top: 5px #1E4C88 solid;
+		padding: 10px;
+		padding-left: 50px;
+	}
+	.result{
+		margin-top: 30px;
+		.tab{
+			font-size: 14px;
+			text-align: center;
+			cursor: pointer;
+			.ext{
+				padding: 10px;
+				height: 40px;
+				border-bottom: 4px solid #CCC;
+			}
+			.local{
+				padding: 10px;
+				height: 40px;
+				border-bottom: 4px solid #CCC;
+			}
+			.active{
+				padding: 10px;
+				color: #FFF !important;
+				background: #1E4C88 !important;
+				border-bottom: 4px solid #CCC;
+			}
+		}
+		.result-cont{
+			min-height: 600px;
+			.result_page{
+				height: auto;
+				min-height: 600px;
+				padding-top: 20px;
+				display: none;
+				.elemento{
+					min-height: 100px;
+					margin-bottom: 30px;
+					overflow: hidden;
+					.header_element{
+						position: relative;
+						height: 20px;
+						width: 100%;
+						.tipo{
+							float: left;
+							line-height: 20px;
+							vertical-align: middle;
+							min-width: 120px;
+							height: auto;
+							padding-left: 5px;
+							padding-right: 5px;
+							height: 20px;
+							font-size: 0.75em;
+							background: #1E4C88;
+							color: #FFF;
+							text-align: center;
+						}
+						.fpublicacion{
+							float: left;
+							padding-left: 30px;
+							font-size: 12px;
+							line-height: 20px;
+						}
+					}
+					.contenido_element{
+						position: relative;
+						width: 100%;
+						height: 120px;
+						padding-top: 5px;
+						padding-bottom: 5px;
+						.imagen_element{
+							float: left;
+							height: 120px;
+							width: 120px;
+							img{
+								height: 100%;
+								width: 100%;
+							}
+						}
+						.datos_element{
+							float: left;
+							height: 90px;
+							width: ~"calc(100% - 120px)";
+							.titulo{
+								position: relative;
+								padding-left: 30px;
+								height: auto;
+								width: 100%;
+							}
+							.fevento{
+								position: relative;
+								padding-left: 30px;
+								height: auto;
+								font-size: 10px;
+								width: 600px;
+							}
+							.resumen{
+								padding-top: 5px;
+								position: relative;
+								padding-left: 30px;
+								height: auto;
+								width: 100%;
+								font-size: 10px;
+								max-width: 600px;
+							}
+						}
+					}
+					
+				}
+			}
+			.pagination{
+				width: 100%;
+				height: 50px;
+				.left_arrow{
+					width: 15%;
+					float: left;
+					padding-left: 10px;
+					padding-right: 10px; 
+					text-align: center;
+					cursor: pointer;
+				}
+				.pagina{
+					width: 30%;
+					float: left;
+					padding-left: 10px;
+					padding-right: 10px; 
+					text-align: center;
+				}
+				.page{
+					width: 15%;
+					float: left;
+					padding-left: 10px;
+					padding-right: 10px;
+					text-align: center;
+					background: #F37432;
+					color: #FFF;
+				}
+				.de{
+					width: 10%;
+					float: left;
+					padding-left: 5px;
+					padding-right: 5px; 
+					text-align: center;
+				}
+				.total{
+					width: 15%;
+					float: left;
+					padding-left: 10px;
+					padding-right: 10px; 
+					text-align: center;
+				}
+				.right_arrow{
+					width: 15%;
+					float: left;
+					padding-left: 10px;
+					padding-right: 10px;
+					text-align: center; 
+					cursor: pointer;
+				}
+			}
+		}
+
+	}
+}

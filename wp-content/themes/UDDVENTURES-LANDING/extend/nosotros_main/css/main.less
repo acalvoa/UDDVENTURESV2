@@ -1,0 +1,117 @@
+.EXTEND_main{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	@media (max-height: 1080px){
+		min-height: 1080px - 128px - 54px;
+	}
+	@media (max-height: 1024px){
+		min-height: 1024px - 128px  - 54px;
+	}
+	@media (max-height: 900px){
+		min-height: 900px - 128px  - 54px;
+	}
+	@media (max-height: 800px){
+		min-height: 800px - 128px  - 54px;
+	}
+	@media (max-height: 768px){
+		min-height: 768px - 128px  - 54px;
+	}
+	@media (min-device-width: 320px) and (max-device-width: 420px){
+		min-height: 250px;
+	}
+	.background{
+		position: absolute;
+		z-index: 1;
+		height: 100%;
+		width: 100%;
+		background-position: center center;
+		background-size: cover;
+		-webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-repeat: no-repeat;
+        /*
+		img{
+			height: 100%;
+			width: 100%;
+		}*/
+	}
+	.shade{
+		position: absolute;
+		z-index: 2;
+		height: 100%;
+		width: 100%;
+		background: rgba(0,0,0,0.3);
+		.identificador{
+			margin-left: 100px;
+			margin-top: 180px;
+			padding-top: 140px;
+			text-align: center;
+			width: 320px;
+		    height: 320px;
+		    -moz-border-radius: 50%;
+		    -webkit-border-radius: 50%;
+		    border-radius: 50%;
+		    background: #005991;
+		    color: #FFF;
+		    font-size: 2.3em;
+		    @media (max-width: 1200px){
+				width: 300px;
+		    	height: 300px;
+		    	margin-top: 200px;
+				padding-left: 30px;
+				padding-top: 135px;
+				margin-left: 70px;
+				font-size: 2em;
+			}
+			@media (max-width: 992px){
+				width: 250px;
+		    	height: 250px;
+		    	margin-left: 40px;
+				padding-left: 30px;
+				padding-top: 115px;
+				font-size: 1.7em;
+			}
+			@media (max-width: 750px){
+				width: 200px;
+		    	height: 200px;
+		    	margin-left: 40px;
+				padding-left: 30px;
+				padding-top: 95px;
+				font-size: 1.2em;
+			}
+			@media (min-device-width: 320px) and (max-device-width: 420px){
+				width: 150px;
+		    	height: 150px;
+		    	margin-top: 50px;
+		    	padding-top: 0px;
+		    	line-height: 160px;
+		    	vertical-align: middle;
+		    	padding-left: 0px;
+			}
+		}
+		.landing-video{
+			margin-top: 230px;
+			@media (max-width: 1200px){
+				margin-top: 200px;
+			}
+			@media (max-width: 992px){
+				margin-top: 200px;
+			}
+			@media (max-width: 750px){
+				margin-top: 200px;
+			}
+			iframe{
+				@media (max-width: 992px){
+					width: 300px;
+					height: 250px;
+				}
+				@media (max-width: 750px){
+					width: 250px;
+					height: 200px;
+				}
+			}
+		}
+	}
+}

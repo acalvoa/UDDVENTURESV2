@@ -1,0 +1,235 @@
+@import "../../base/css/base.less";
+.EXTEND_eventos{
+	position: relative;
+	height: auto;
+	padding-bottom: 0px;
+	.header{
+		background: @color-header;
+		padding: 10px 0;
+		font-style: normal;
+		text-align: center;
+		font-size: 1.7em;
+		height: @header-height;
+		color: #FFF;
+		text-transform: uppercase;
+		font-family: @header-font;
+		font-weight: lighter;
+		letter-spacing: 15px;
+	}
+	.subheader{
+		height: 30px;
+		background:#1A86A8;
+		padding-left: 0px;
+		padding-right: 0px;
+		font-size: 14px;
+		.tipos{
+			float: right;
+			text-transform: uppercase;
+			padding-left: 10px;
+			padding-right: 10px;
+			text-align: center;
+			height: 100%;
+			padding-top: 5px;
+			color:#FFF;
+			cursor: pointer;
+		}
+		.tipos:hover{
+			background:#CCC;
+		}
+		.active{
+			background: #E96D54;
+		}
+	}
+	.left-back{
+		margin-top: 20px;
+		font-size: 2em;
+		min-height: 804px;
+		cursor: pointer;
+		text-align: center;
+		color: #0B548A;
+	}
+	.eventos-container{
+		display: none;
+		width: 100%;
+		padding-left: 0px;
+		padding-right: 0px;
+		.calendar-container{
+			@media (min-device-width: 320px) and (max-device-width: 420px){
+				width: 100%;
+			}
+			@media (min-device-width: 560px) and (max-device-width: 740px){
+				width: 100%;
+			}
+			.calendario{
+				display: none;
+				width: 90%;
+				margin-left: 5%;
+				height: auto;
+				.calendario-head{
+					.calendario-title{
+						float: left;
+						padding-top: 30px;
+						font-size: 2em;
+						width: 80%;
+						@media (max-width: 1200px){
+							font-size: 1.75em;
+							padding-top: 25px;
+						}
+						@media (max-width: 992px){
+							font-size: 1.5em;
+							padding-top: 20px;
+						}
+						@media (max-width: 750px){
+							font-size: 1.25em;
+							padding-top: 10px;
+						}
+						.anio{
+							color: #999;
+							font-size: 0.6em;
+						}
+					}
+					.calendar-control-left{
+						cursor: pointer;
+						padding-top: 30px;
+						float: left;
+						width: 10%;
+						font-size: 2em;
+						@media (max-width: 1200px){
+							font-size: 1.75em;
+							padding-top: 25px;
+						}
+						@media (max-width: 992px){
+							font-size: 1.5em;
+							padding-top: 20px;
+						}
+						@media (max-width: 750px){
+							font-size: 1.25em;
+							padding-top: 10px;
+						}
+					}
+					.calendar-control-right{
+						cursor: pointer;
+						padding-top: 30px;
+						float: left;
+						width: 10%;
+						font-size: 2em;
+						@media (max-width: 1200px){
+							font-size: 1.75em;
+							padding-top: 25px;
+						}
+						@media (max-width: 992px){
+							font-size: 1.5em;
+							padding-top: 20px;
+						}
+						@media (max-width: 750px){
+							font-size: 1.25em;
+							padding-top: 10px;
+						}
+					}
+				}
+				.calendario-date{
+					float: left;
+					width: 100%;
+					padding-top: 20px;
+					table{
+						width: 100%;
+						thead{
+							tr{
+								td{
+									text-align: center;
+									height: 40px;
+									cursor: pointer;
+									@media (max-width: 1200px){
+										font-size: 0.9em;
+									}
+									@media (max-width: 992px){
+										font-size: 0.7em;
+									}
+									@media (max-width: 750px){
+										font-size: 0.6em;
+									}
+								}
+							}
+						}
+						tbody{
+							tr{
+								td{
+									height: 40px;
+									text-align: center;
+									cursor: pointer;
+									@media (max-width: 1200px){
+										font-size: 0.9em;
+										height: 40px;
+									}
+									@media (max-width: 992px){
+										font-size: 0.7em;
+										height: 27px;
+									}
+									@media (max-width: 750px){
+										font-size: 0.6em;
+										height: 25px;
+									}
+								}
+								.mark{
+									background: #E96D54;
+									color: #FFF;
+								}
+							}
+						}
+					}
+				}
+			}
+			.calendario:first-child{
+				display: block;
+			}
+		}
+		.eventos-img{
+			padding-left: 0px;
+			padding-right: 0px;
+			overflow: hidden;
+			img{
+				width: 101%;
+			}
+			@media (min-device-width: 320px) and (max-device-width: 420px){
+				height: 160px;
+			}
+			@media (min-device-width: 560px) and (max-device-width: 740px){
+				height: 160px;
+			}
+		}
+	}
+}
+.popover_eventos{
+	position: absolute;
+	height: 200px;
+	width: 200px;
+	background: #FFF;
+	z-index: 10;
+	-webkit-box-shadow: 4px 4px 5px 0px rgba(128,128,128,1);
+	-moz-box-shadow: 4px 4px 5px 0px rgba(128,128,128,1);
+	box-shadow: 4px 4px 5px 0px rgba(128,128,128,1);
+	.poster{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		height: 100%;
+		width: 100%;
+		img{
+			height: 100%;
+			width: 100%;
+		}
+	}
+	.over{
+		position: absolute;
+		top: 70px;
+		color: #FFF;
+		text-align: center;
+		padding-top: 10px;
+		font-size: 0.8em;
+		font-weight: bold;
+		left: 0px;
+		width: 100%;
+		height: 50px;
+		background: rgba(0,0,0,0.5)
+	}
+}

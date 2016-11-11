@@ -1,0 +1,115 @@
+@import "../../base/css/base.less";
+.EXTEND_faq{
+	position: relative;
+	min-height: 804px;
+	margin-bottom: 20px;
+	.header{
+		background: @color-header;
+		padding: 10px 0;
+		font-style: normal;
+		text-align: center;
+		font-size: 1.7em;
+		height: @header-height;
+		color: #FFF;
+		text-transform: uppercase;
+		font-family: @header-font;
+		font-weight: lighter;
+		letter-spacing: 15px;
+	}
+	.postulaImg{
+		width: 100%;
+		max-height: 330px;
+		overflow: hidden;
+		img{
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.left{
+		margin-top: 20px;
+		font-size: 2em;
+		min-height: 804px;
+		border-right: 2px #CCC solid;
+		cursor: pointer;
+		color: #0B548A;
+	}
+	.faq-items{
+		padding-top: 20px;
+		.faq-item{
+			position: relative;
+			height: auto;
+			padding-bottom: 5px;
+			@media (min-device-width: 320px) and (max-device-width: 420px){
+				padding-left: 0px;
+				padding-right: 0px;
+			}
+			.title{
+				position: relative;
+				cursor: pointer;
+				height: 50px;
+				width: 100%;
+				.etiqueta{
+					float: left;
+					color:#1E4C88;
+					font-size: 1.4em; 
+					height: 30px;
+					width: 30px;
+					text-align: center;
+					@media (min-device-width: 320px) and (max-device-width: 420px){
+						width: 5%;
+						font-size: 0.9em;
+					}
+				}
+				.texto{
+					float: left;
+					color: #1E4C88;
+					font-size: 1.3em;
+					margin-left: 10px;
+					height: 40px;
+					@media (min-device-width: 320px) and (max-device-width: 420px){
+						font-size: 0.9em;
+						width: 95%;
+						margin-left: 0px;
+						padding-left: 5px;
+					}
+				}
+				.active{
+					color:#E96D54;
+					font-size: 1.3em;
+					@media (min-device-width: 320px) and (max-device-width: 420px){
+						font-size: 0.9em;
+					}
+				}
+			}
+			.contenido{
+				position: relative;
+				display: none;
+				height: auto;
+				font-size: 0.9em;
+				width: 100%;
+				padding-bottom: 10px;
+				padding-left: 10px;
+				margin-bottom: 10px;
+				text-align: left;
+				border-bottom: 1px solid #CCC;
+				@media (min-device-width: 320px) and (max-device-width: 420px){
+					font-size: 0.8em;
+				}
+			}
+		}
+		.faq-image{
+			display: none;
+			.object{
+				max-height: 410px;
+				overflow: hidden;
+				border-bottom: 10px solid #E96D54;
+				margin-top: 30px;
+				img{
+					width: 100%;
+				}
+			}
+			
+		}
+	}
+
+}

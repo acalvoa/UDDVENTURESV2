@@ -1,0 +1,100 @@
+//GDZ: 24-08-2015
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+.pull-right {
+	float: right;
+}
+.container{
+	max-width: 1000px;
+}
+
+.header{
+	padding 10px 0 !important;
+	padding-top: 10px !important;
+	div {
+
+	}
+}
+
+body,html{
+	position: relative;
+	height: auto;
+	min-height: 100%;
+	width: 100%;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	background: #FFF;
+	min-width: 660px;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	overflow-x: hidden;
+	@media (min-device-height: 1080px) and (max-device-height: 1080px){
+		min-width: 756px;
+	}
+	@media (min-device-width: 320px) and (max-device-width: 420px){
+		min-width: 320px;
+		max-width: 420px;
+		width: 100%;
+	}
+	@media (min-device-width: 560px) and (max-device-width: 740px){
+		min-width: 0px;
+	}
+	//DEFINIMOS LOS TAGS BASES DEL SITIO
+	h1{
+		font-size: 3em;
+	}
+	h2{
+		font-size: 2.5em;
+	}
+	h3{
+		font-size: 2em;
+	}
+	h4{
+		font-size: 1.5em;
+	}
+	h5{
+		font-size: 1em;
+	}
+	h6{
+		font-size: 0.5em;
+	}
+
+	//DEFINIMOS LOS ELEMENTOS BASICOS
+	div,span{
+		position: relative;
+	}
+	main{
+		min-height:100%;
+		width: 100%;
+	}
+	.nopadding{
+		padding: 0 0 0 0 !important;
+	}
+	.social_networks{
+		.title{
+			padding-top: 10px;
+			text-align: right;
+			font-size: 14px;
+			color: #666;
+			padding-left: 0px;
+  			padding-bottom: 5px;
+		}
+		.social{
+			font-size: 24px;
+			text-align: right;
+			padding-right: 15px;
+			float: right;
+			i{
+				margin-right: 10px;
+				cursor: pointer;
+			}
+			.fa-twitter-square{
+				color: #75A9D9;
+			}
+			.fa-facebook-official{
+				color:#435593;
+			}
+		}
+	}
+}
