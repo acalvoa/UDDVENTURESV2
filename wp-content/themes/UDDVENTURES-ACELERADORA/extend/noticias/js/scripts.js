@@ -10,21 +10,17 @@
 		var EXTEND_noticias = 1;
 		var EXTEND_noticias_MAX = Math.floor($(".EXTEND_noticias .newcol").length/9)+1;
 		//DECLARAMOS LOS EVENTOS DE PAGINATION
-		$(".EXTEND_noticias .pagination-item").on('click',function(){
-			EXTEND_noticias = $(this).attr('data-pagination');
-			$(".EXTEND_noticias .newcol").hide();
-			$(".EXTEND_noticias .newcol[data-pagination="+EXTEND_noticias+"]").show();
-		});
+		// $(".EXTEND_noticias .pagination-item").on('click',function(){
+		// 	EXTEND_noticias = $(this).attr('data-pagination');
+		// 	$(".EXTEND_noticias .newcol").hide();
+		// 	$(".EXTEND_noticias .newcol[data-pagination="+EXTEND_noticias+"]").show();
+		// });
 		//CONTROLES
 		$(".EXTEND_noticias .left").on('click',function(){
-			if($(".EXTEND_noticias .newscontainer .newcol").length > 2){
-				$(".EXTEND_noticias .newscontainer .newcol").last().prependTo($(".EXTEND_noticias .newscontainer"));
-			}
+			$(".EXTEND_noticias .newscontainer .newcol").last().prependTo($(".EXTEND_noticias .newscontainer"));
 		});
 		$(".EXTEND_noticias .right").on('click',function(){
-			if($(".EXTEND_noticias .newscontainer .newcol").length > 2){
-				$(".EXTEND_noticias .newscontainer .newcol").first().appendTo($(".EXTEND_noticias .newscontainer"));
-			}
+			$(".EXTEND_noticias .newscontainer .newcol").first().appendTo($(".EXTEND_noticias .newscontainer"));
 		});
 		//DECLARAMOS LOS LINKS
 		$(".EXTEND_noticias .newcol .image").on('click',function(){

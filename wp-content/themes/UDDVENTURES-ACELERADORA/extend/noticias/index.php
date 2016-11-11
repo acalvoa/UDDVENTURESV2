@@ -30,7 +30,7 @@
   						$my_query->the_post();
   						$custom_fields = get_field_objects();
   						?>
-  						<div class="newcol" data-pagination="<?php echo floor($numero/9)+1; ?>" style="<?php if((floor($numero/9)+1) > 1) echo 'display:none;'; ?>">
+  						<div class="newcol">
 							<div class="image" data-link="<?php echo get_permalink(); ?>">
 								<img src="<?php echo $custom_fields['imagen_noticia']['value']['url']; ?>" />
 								<div class="background"><div>VER MAS</div></div>
