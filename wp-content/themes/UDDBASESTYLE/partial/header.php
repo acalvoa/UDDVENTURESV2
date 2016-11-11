@@ -63,10 +63,10 @@
 				<div class="header-link pull-right visible-sm-block visible-md-block visible-lg-block" style="text-align:right">
 					<ul class="submenu-top">
 						<!-- <li><a class="faq-link" id="faq-link">FAQ'S</a></li> -->
+						<li id="postula-link"><a class="postula-link">CONVOCATORIAS</a></li>
 						<li><a class="contacto-link" id="contacto-link">CONTACTO</a></li>
-						<li><a class="contacto-link" id="contacto-link">EQUIPO</a></li>
+						<li><a class="equipo-link" id="equipo-link">EQUIPO</a></li>
 						<li><a class="quehacemos-link" id="quehacemos-link">QU&Eacute; HACEMOS</a></li>
-						<li><a class="postula-link" id="postula-link">CONVOCATORIAS</a></li>
 					</ul>
 				</div>
 				<!-- <div class="header-rss redes-spa pull-right visible-sm-block visible-md-block visible-lg-block">
@@ -81,11 +81,13 @@
 		<div class="container-fluid">
 			<div class="row">
 				<ul>
-					<li id="emprendedores-link"><a>EMPRENDEDORES</a></li>
+					<li id="emprendedores-link"><a>STARTUPS</a></li>
+					<li id="mentores-link"><a>MENTORES</a></li>
 					<li id="redes-link"><a>REDES</a></li>
 					<li id="recursos-link"><a>RECURSOS</a></li>
 					<li id="noticias-link"><a>NOTICIAS</a></li>
 					<li id="eventos-link"><a>EVENTOS</a></li>
+					<li id="eventos-link"><a>FAQ</a></li>
 				</ul>
 			</div>
 		</div>

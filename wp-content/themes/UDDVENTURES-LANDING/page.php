@@ -8,6 +8,7 @@
 <main role="main">
 	<!-- section -->
 	<?php include("extend/space/index.php");?>
+	<?php echo "sdfsfsd"; ?>
 	<?php 
 		$url = URL();
 		if(strpos($url, '/ventures') === 0){ //LISTO

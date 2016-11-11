@@ -31,6 +31,10 @@
 			var top = $("#redes").offset().top - 158;
 			$('body').scrollTop(top);
 		});
+		$("#mentores-link").on('click',function(){
+			var top = $("#mentores").offset().top - 158;
+			$('body').scrollTop(top);
+		});
 		$("#recursos-link").on('click',function(){
 			var top = $("#recursos").offset().top - 158;
 			$('body').scrollTop(top);
@@ -61,6 +65,10 @@
 		$("#emprendedores-link").on('click', function(){
 			var top = $("#emprendedores").offset().top - 158;
 			$('body').scrollTop(top);
+		});
+		$("#equipo-link").on('click', function(){
+			var top = '/aceleradora/equipo-aceleradora-de-negocios-udd-ventures/'
+			location.href = top;
 		});
 		$("#eventos-link").on('click', function(){
 			var top = $("#eventos").offset().top - 158;
