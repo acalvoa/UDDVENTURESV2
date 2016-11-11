@@ -6,12 +6,12 @@
 		padding: 10px 0;
 		font-style: normal;
 		text-align: center;
-		font-size: 1.7em;
+		font-size: @header-size;
 		height: @header-height;
-		color: #FFF;
+		color: @header-color;
 		text-transform: uppercase;
 		font-family: @header-font;
-		font-weight: lighter;
+		font-weight: @header-weight;
 		letter-spacing: 15px;
 	}
 	.left-back{
@@ -32,7 +32,7 @@
 	.noticias{
 		.left{
 			margin-top: 0px;
-			height: 588px;
+			height: 294px;
 			font-size: 2em;
 			text-align: center;
 			cursor: pointer;
@@ -82,7 +82,7 @@
 		}
 		.right{
 			margin-top: 0px;
-			height: 588px;
+			height: 294px;
 			font-size: 2em;
 			text-align: center;
 			cursor: pointer;
@@ -135,6 +135,8 @@
 			padding-top: 20px;
 			padding-left: 0px;
 			padding-right: 0px;
+			height: 294px;
+			overflow: hidden;
 			@media (max-width: 1200px){
 			}
 			@media (max-width: 992px){

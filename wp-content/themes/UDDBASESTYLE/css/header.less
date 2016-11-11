@@ -202,10 +202,63 @@ header{
 		}
 	}
 	.subheader{
-		background: #1E4C88;
+		background: #FF5100;
 		color: #FFF;
 		height: 100px;
 		padding-top: 30px;
+		.header-menu-flex{
+			display: flex;
+			flex-direction:row;
+			.header-logo{
+				width: auto;
+				display: flex !important;
+				order:1;
+				flex:1;
+				justify-content:flex-start;
+			}
+			.header-link{
+				width: auto;
+				display: flex !important;
+				order:2;
+				flex:2;
+				justify-content:flex-end;
+			}
+			.header-rss{
+				width: auto;
+				display: flex !important;
+				order:3;
+				flex:1;
+				justify-content:flex-end;
+				a{
+					text-decoration: none;
+					color:#FFF;
+					i{
+						cursor: pointer;
+						&:hover{
+							color:#000;
+						}
+					}
+
+				}
+				.rss-element{
+					display: flex;
+					padding-top: 5px;
+					width: 30px;
+					padding-left: 0px;
+					height: auto;
+					font-size: 1.5em;
+					width: 25px;
+					line-height: 30px;
+					vertical-align: middle;
+					list-style:none;
+					text-align: center;
+					cursor: pointer;
+					&:hover:{
+						color:#000;
+					}
+				}
+			}
+		}
 		.logocont{
 			margin-left: 0;
 			padding-top: 10px;
@@ -270,7 +323,7 @@ header{
 				}
 			}
 			.active{
-				color: #9FA92B;
+				color: #000;
 			}
 		}
 		.menutext{
@@ -284,7 +337,6 @@ header{
 		}
 		.submenu-top{
 			padding-top: 5px;
-			padding-right: 15px;
 			@media (max-width: 1200px){
 				padding-top: 16px;
 			}
@@ -330,7 +382,7 @@ header{
 			}
 			.active{
 				padding-top: 0px;
-				background: rgba(255,255,255,0.2);
+				background: #000;
 			}
 		}
 		.redes-spa{
@@ -360,7 +412,6 @@ header{
 				}
 				li{
 					float: left;
-					border-left: 1px solid #FFF;
 					font-size: 1.5em;
 					width: 25px;
 					line-height: 30px;
@@ -383,18 +434,12 @@ header{
 						color:#FFF;
 					}
 				}
-				li:first-child{
-					border-left: none;
-				}
-				li:last-child{
-					border-left: 1px solid #FFF;
-				}
 			}
 		}
 	}
 	.menu-principal{
 		height: 30px;
-		background: #FFF;
+		background: #000;
 		@media (max-width: 620px){
 			height: 25px;
 		}
@@ -409,7 +454,7 @@ header{
 			    -o-transition: all .2s ease-in;
 			    -webkit-transition: all .2s ease-in;
 			    transition: all .2s ease-in;
-				background: #FFF;
+				background: #000;
 				font-size: 1.25em;
 				list-style:none;
 				text-align: center;
@@ -427,7 +472,7 @@ header{
 					padding-left: 15px;
 				}
 				a{
-					color: #1E4C88;
+					color: #FFF;
 					text-decoration: none;
 				}
 			}

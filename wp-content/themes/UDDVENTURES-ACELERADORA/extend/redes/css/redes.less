@@ -14,17 +14,17 @@
 		padding: 10px 0;
 		font-style: normal;
 		text-align: center;
-		font-size: 1.7em;
+		font-size: @header-size;
 		height: @header-height;
-		color: #FFF;
+		color: @header-color;
 		text-transform: uppercase;
 		font-family: @header-font;
-		font-weight: lighter;
+		font-weight: @header-weight;
 		letter-spacing: 15px;
 	}
 	.subheader{
 		height: 30px;
-		background:#1A86A8;
+		background:@color-subheader;
 		.tipos{
 			float: right;
 			text-transform: uppercase;
@@ -41,7 +41,7 @@
 			background:#CCC;
 		}
 		.active{
-			background: #E96D54;
+			background: @active-tab-subheader;
 		}
 	}
 	.left-back{
