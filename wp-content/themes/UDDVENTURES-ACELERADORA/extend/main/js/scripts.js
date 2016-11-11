@@ -29,7 +29,7 @@
 		//INTERVALO AUTOMATICO
 		var interval = setInterval(function(){
 			change_vitrina();
-		}, 10000);
+		}, 5000);
 		//BOTONES DEL SLIDER
 		$(".slider_flecha[dir='der']").on('click', function(){
 			$(elementos[face]).css({'opacity':0, 'z-index':0});
@@ -45,7 +45,7 @@
 			clearInterval(interval);
 			interval = setInterval(function(){
 				change_vitrina();
-			}, 10000);
+			}, 5000);
 		});
 		$(".slider_flecha[dir='izq']").on('click', function(){
 			$(elementos[face]).css({'opacity':0, 'z-index':0});
@@ -61,12 +61,24 @@
 			clearInterval(interval);
 			interval = setInterval(function(){
 				change_vitrina();
-			}, 10000);
+			}, 5000);
 		});
 		$(".slider-element").on('click', function(){
 			if($(this).attr('url') != ''){
 				location.href = $(this).attr('url');
 			}
+		});
+		$(".bounces").on('click', function(){
+			var ite = $(this).attr('ite');
+			$(elementos[face]).css({'opacity':0, 'z-index':0});
+			$(bounces[face]).removeClass('active');
+			face = ite;
+			$(elementos[face]).css({'opacity':1, 'z-index':8});
+			$(bounces[face]).addClass('active');
+			clearInterval(interval);
+			interval = setInterval(function(){
+				change_vitrina();
+			}, 5000);
 		});
 	});
 })(jQuery, this);

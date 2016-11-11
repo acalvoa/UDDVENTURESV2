@@ -21,14 +21,12 @@
 			}
 		?>
 		</div>
-		<div class="slider_flecha derecha" dir="der"><i class="fa fa-angle-right" aria-hidden="true"></i>
-</div>
-		<div class="slider_flecha izq" dir="izq"><i class="fa fa-angle-left" aria-hidden="true"></i>
-</div>
+		<div class="slider_flecha derecha" dir="der"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+		<div class="slider_flecha izq" dir="izq"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
 		<div class="bounce">
 		<?php 
 			for($i=0;$i<$bounces;$i++){
-				?><div class="bounces"></div><?php
+				?><div class="bounces" ite="<?php echo $i; ?>"></div><?php
 			}
 		?>
 		</div>

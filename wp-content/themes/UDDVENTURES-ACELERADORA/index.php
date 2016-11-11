@@ -13,4 +13,5 @@
 	<?php include("extend/eventos/index.php");?>
 	<!-- /section -->
 </main>
+<?php include("extend/footer/index.php"); ?> 
 <?php get_footer(); ?>
