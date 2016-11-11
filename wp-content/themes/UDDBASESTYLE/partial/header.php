@@ -84,7 +84,6 @@
 					<li id="emprendedores-link"><a>STARTUPS</a></li>
 					<li id="mentores-link"><a>MENTORES</a></li>
 					<li id="redes-link"><a>REDES</a></li>
-					<li id="recursos-link"><a>RECURSOS</a></li>
 					<li id="noticias-link"><a>NOTICIAS</a></li>
 					<li id="eventos-link"><a>EVENTOS</a></li>
 					<li id="eventos-link"><a>FAQ</a></li>

@@ -9,7 +9,6 @@
 	<?php include("extend/emprendedores/index.php");?>
 	<?php include("extend/mentores/index.php");?>
 	<?php include("extend/alianzas/index.php");?>
-	<?php include("extend/recursos/index.php");?>
 	<?php include("extend/eventos/index.php");?>
 	<!-- /section -->
 </main>
