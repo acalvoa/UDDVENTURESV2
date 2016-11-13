@@ -1,4 +1,4 @@
-<section class="EXTEND_postula" id="postula">
+<section class="EXTEND_postula" id="convocatorias">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 header">
@@ -6,9 +6,9 @@
 			</div>
 		</div>
 		<div class="row postulaciones" >
-			<div class="col-xs-12 visible-xs-block" id="postulaciones-imagen-landing">
+			<!-- <div class="col-xs-12 visible-xs-block" id="postulaciones-imagen-landing">
 				<div class="postulaImg"><img src="<?php echo get_postula_image(); ?>" /></div>
-			</div>
+			</div> -->
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 postulaciones-items">
 				<?php
 					$args=array(

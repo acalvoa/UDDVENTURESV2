@@ -9,8 +9,6 @@
 
 		// DOM ready, take it away
 		$(".submenu-top li").on('click', function(){
-			$(".submenu-top li").removeClass("active");
-			$(this).addClass("active");	
 		});
 		$(".innovacion-link").on('click',function(){
 			location.href = "http://innovacion.udd.cl/"
@@ -22,7 +20,8 @@
 			location.href = $.ENTORNO+"/que-hacemos/";
 		});
 		$(".postula-link").on('click',function(){
-			location.href = $.ENTORNO+"/postulaciones/";
+			var top = $("#convocatorias").offset().top - 158;
+			$('body').scrollTop(top);
 		});
 		$(".nosotros-link").on('click',function(){
 			location.href = $.ENTORNO+"/ventures/";

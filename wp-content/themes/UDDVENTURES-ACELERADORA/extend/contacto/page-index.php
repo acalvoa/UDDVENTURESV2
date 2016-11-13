@@ -6,7 +6,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container-fluid">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 conrow">
 			<div class="row contactorow">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contacto-items">

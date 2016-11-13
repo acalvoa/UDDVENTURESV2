@@ -1,6 +1,6 @@
 <header>
 	<div class="container-fluid header">
-	<div class="container">
+	<div class="container-cluid">
 			<div class="row">
 				<div class=" col-sm-offset-2 col-md-offset-1 col-lg-offset-1 col-xs-12 col-sm-10 col-md-10 col-lg-10">
 					<ul>
@@ -67,6 +67,7 @@
 						<li><a class="contacto-link" id="contacto-link">CONTACTO</a></li>
 						<li><a class="equipo-link" id="equipo-link">EQUIPO</a></li>
 						<li><a class="quehacemos-link" id="quehacemos-link">QU&Eacute; HACEMOS</a></li>
+						<li><i class="fa fa-search busqueda"></i></li>
 					</ul>
 				</div>
 				<!-- <div class="header-rss redes-spa pull-right visible-sm-block visible-md-block visible-lg-block">
