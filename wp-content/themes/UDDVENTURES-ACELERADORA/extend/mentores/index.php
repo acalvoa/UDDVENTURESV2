@@ -1,5 +1,5 @@
 <section class="EXTEND_redes" id="mentores">
-	<div class="container" id="news-folder">
+	<div class="container-fluid" id="news-folder">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div class="header">Mentores</div>
@@ -48,7 +48,7 @@
 				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 control right"><h2><i class="fa fa-angle-right"></i></h2></div>
 			</div>-->
 			<div class="row redes">
-				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 control left <?php if($my_query->found_posts > 5) echo 'double'; ?>" >
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 control left " >
 					<div class="autocenter">
 						<h3><i class="fa fa-angle-left"></i></h3>
 					</div>
@@ -76,8 +76,7 @@
 					foreach ($contenedor[null]as $valor) {
 						?>
 						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 newcol" >
-							<div class="image">
-								<img src="<?php echo $valor['image']; ?>" />
+							<div class="image" style="background-image: url('<?php echo $valor['image']; ?>');">
 								<div class="background"  data='<?php echo json_encode($valor); ?>'>
 									<div class="text">
 										<div><?php echo $valor['title']; ?></div>
@@ -91,7 +90,7 @@
 					}
 				?>
 				</div>
-				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 control right <?php if($my_query->found_posts > 5) echo 'double'; ?>">
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 control right ">
 					<div class="autocenter">
 						<h3><i class="fa fa-angle-right"></i></h3>
 					</div>

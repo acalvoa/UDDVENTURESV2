@@ -28,14 +28,14 @@
 	  						if($custom_fields['estado_postulacion']['value'] || true){
 	  						?>
 	  						<div class="convocatoria-container">
-								<div class="label" style="display:<?php if($is_active){ echo 'block'; } else { echo 'none'; }?>">Abierta</div>
+								<div class="label" style="display:block;"><?php if($is_active){ echo 'Abierta'; } else { echo 'Cerrada'; }?></div>
 								<div class="image" style="background-image: url('<?php echo $custom_fields['imagen_postulacion']['value']['url']; ?>');"></div>
-								<div class="description" style="background: <?php echo $custom_fields['color_postulacion']['value']; ?>">
+								<!-- <div class="description" style="background: <?php echo $custom_fields['color_postulacion']['value']; ?>">
 									<div class="title"><?php echo the_title(); ?></div>
-									<div class="contenido"><?php echo $custom_fields['resumen_postulacion']['value']; ?></div>
-									<div class="btn_read" data-link="<?php echo get_permalink(); ?>">Leer Mas</div>
-									<div class="btn_status" data-link="<?php if($is_active){ echo get_permalink(); } else { echo 'NOTLINK'; }  ?>"><?php if($is_active){ echo "ABIERTA"; } else{ echo "CERRADA"; }?></div>
-								</div>
+									<!-- <div class="contenido"><?php echo $custom_fields['resumen_postulacion']['value']; ?></div> -->
+									<!-- <div class="btn_read" data-link="<?php echo get_permalink(); ?>">Leer Mas</div> -->
+									<!-- <div class="btn_status" data-link="<?php if($is_active){ echo get_permalink(); } else { echo 'NOTLINK'; }  ?>"><?php if($is_active){ echo "ABIERTA"; } else{ echo "CERRADA"; }?></div> -->
+								<!-- </div> -->
 							</div>
 	  						<?php
 	  						}

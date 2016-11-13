@@ -6,33 +6,33 @@
 		
 		// DOM ready, take it away
 		//DECLARAMOS LOS EVENTOS DE PAGINATION
-		$(".EXTEND_redes .subheader .tipos").on('click',function(){
-			$(".EXTEND_redes .subheader .active").removeClass('active');
+		$("#mentores .subheader .tipos").on('click',function(){
+			$("#mentores .subheader .active").removeClass('active');
 			$(this).addClass('active');
-			$(".EXTEND_redes .element-group").hide();
-			$(".EXTEND_redes .activerow").removeClass('activerow');
-			$(".EXTEND_redes .element-group[data-id='"+$(this).attr('data-id')+"']").show().addClass('activerow');
+			$("#mentores .element-group").hide();
+			$("#mentores .activerow").removeClass('activerow');
+			$("#mentores .element-group[data-id='"+$(this).attr('data-id')+"']").show().addClass('activerow');
 		});
 		//CONTROLES
-		$(".EXTEND_redes .left").on('click',function(){
-			if($(".EXTEND_redes .activerow .containercol .newcol").length > 4){
-				$(".EXTEND_redes .activerow .containercol .newcol").last().prependTo($(".EXTEND_redes .activerow .containercol"));
+		$("#mentores .left").on('click',function(){
+			if($("#mentores .activerow .containercol .newcol").length > 4){
+				$("#mentores .activerow .containercol .newcol").last().prependTo($("#mentores .activerow .containercol"));
 			}
 		});
-		$(".EXTEND_redes .right").on('click',function(){
-			if($(".EXTEND_redes .activerow .containercol .newcol").length > 4){
-				$(".EXTEND_redes .activerow .containercol .newcol").first().appendTo($(".EXTEND_redes .activerow .containercol"));
+		$("#mentores .right").on('click',function(){
+			if($("#mentores .activerow .containercol .newcol").length > 4){
+				$("#mentores .activerow .containercol .newcol").first().appendTo($("#mentores .activerow .containercol"));
 			}
 		});
 		//CLICK
-		$(".EXTEND_redes .background").on('click',function(){
+		$("#mentores .background").on('click',function(){
 			var obj = JSON.parse($(this).attr('data'));
 			var p = $('<div class="fadebox"></div>').appendTo($('body'));
 			var k = $('<div class="back"></div>').appendTo(p).on('click',function(){
 				$(".fadebox").remove();
 			});
 			var box = $('<div class="box"></div>').appendTo(p);
-			var header = $('<div class="header" style="background: '+$(".EXTEND_redes .header").css('background')+';"><div class="closebtn">Cerrar <i class="fa fa-times"></i></div></div>').appendTo(box);
+			var header = $('<div class="header" style="background: '+$("#mentores .header").css('background')+';"><div class="closebtn">Cerrar <i class="fa fa-times"></i></div></div>').appendTo(box);
 			$(".closebtn").on('click',function(){
 				$(".fadebox").remove();
 			});
@@ -58,7 +58,7 @@
 			foto.clone().attr("class","fotomobile").prependTo(body);
 		});
 		//DECLARAMOS EL LINK BACK EN EL POST
-		$(".EXTEND_redes .left-back").on('click',function(){
+		$("#mentores .left-back").on('click',function(){
 			window.history.back();
 		});
 	});

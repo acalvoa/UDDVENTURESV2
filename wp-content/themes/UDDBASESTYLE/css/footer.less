@@ -5,14 +5,22 @@ footer{
 	.footer-bot{
 		padding-top: 30px;
 		padding-bottom: 30px;
+		display: flex;
+		flex-direction:row;
 		.acreditacion-logo{
+			display: flex;
+			flex-direction:row;
+			flex:1;
 			@media (min-device-width: 560px) and (max-device-width: 740px){
-				width: 25%;
-				padding-left: 10px;
-				padding-right: 10px;
+				// width: 25%;
+				// padding-left: 10px;
+				// padding-right: 10px;
 			}
 			img{
+				display: flex;
 				height: 80px;
+				margin-right: 60px;
+				margin-left: 20px;
 				@media (max-width: 1200px){
 					margin-top: 5px;
 					height: 70px;
@@ -34,35 +42,37 @@ footer{
 			}
 		}
 		.innova-logo{
-			padding-top:25px;
-			padding-bottom: 25px;
+			display: flex;
+			flex-direction:row;
+			flex:1;
+			justify-content:flex-end;
 			@media (min-device-width: 560px) and (max-device-width: 740px){
 				width: 20%;
 			}
 			img{
-				height: 30px;
-				position: absolute;
-				margin: auto !important;
+				height: 80px;
+				display: flex;
+				// margin: auto !important;
 				left: 0;
 				right: 0;
 				top: 0;
 				bottom: 0;
 				@media (min-width: 1200px){
 					margin-top: 2.5px;
-					height: 25px;
+					// height: 25px;
 				}
 				@media (max-width: 992px){
 					margin-top: 5px;
 					padding-left: 5px;
-					height: 20px;
+					height: 60px;
 				}
 				@media (max-width: 750px){
 					margin-top: 0px;
 					padding-left: 10px;
-					height: 15px;
+					height: 50px;
 				}
 				@media (min-device-width: 560px) and (max-device-width: 740px){
-					height: 13px;
+					height: 35px;
 				}
 			}
 		}

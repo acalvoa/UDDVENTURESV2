@@ -1,5 +1,5 @@
 <section class="EXTEND_emprendedores" id="emprendedores">
-	<div class="container" id="news-folder">
+	<div class="container-fluid" id="news-folder">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 header">
 				STARTUPS
@@ -91,8 +91,7 @@
 					foreach ($contenedor[null] as $valor) {
 						?>
 						<div class="newcol" >
-							<div class="image" data-link="<?php echo $valor['link']; ?>">
-								<img src="<?php echo $valor['image']; ?>" />
+							<div class="image" data-link="<?php echo $valor['link']; ?>" style="background-image: url('<?php echo $valor['image']; ?>');">
 								<div class="background">
 									<div class="text">
 										<div><?php echo $valor['title']; ?></div>

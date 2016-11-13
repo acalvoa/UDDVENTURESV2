@@ -1,11 +1,11 @@
 <section class="EXTEND_eventos" id="eventos">
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 header">
 				<div>EVENTOS</div>
 			</div>
 		</div>
-		<div class="row">
+		<!-- <div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 subheader">
 				<?php 
 					function escapeJsonString($value) { # list from www.json.org: (\b backspace, \f formfeed)
@@ -25,8 +25,8 @@
 					<?php
 					}
 				?>
-			</div>
-		</div>
+			<!-- </div>
+		</div> --> -->
 	
 		<?php
 			$numero = 1;
