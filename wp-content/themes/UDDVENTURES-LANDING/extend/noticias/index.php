@@ -1,5 +1,5 @@
 <section class="EXTEND_noticias" id="noticias">
-	<div class="container" id="news-folder">
+	<div class="container-fluid" id="news-folder">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 header">
 				NOTICIAS
@@ -30,8 +30,7 @@
   						$custom_fields = get_field_objects();
   						?>
   						<div class="newcol" data-pagination="<?php echo floor($numero/9)+1; ?>" style="<?php if((floor($numero/9)+1) > 1) echo 'display:none;'; ?>">
-							<div class="image" data-link="<?php echo get_permalink(); ?>">
-								<img src="<?php echo $custom_fields['imagen_noticia']['value']['url']; ?>" />
+							<div class="image" data-link="<?php echo get_permalink(); ?>" style="background-image: url('<?php echo $custom_fields['imagen_noticia']['value']['url']; ?>');">
 								<div class="background"><div>VER MAS</div></div>
 							</div>
 							<div class="content">
