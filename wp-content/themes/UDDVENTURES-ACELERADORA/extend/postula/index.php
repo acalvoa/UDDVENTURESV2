@@ -27,7 +27,7 @@
 							$is_active = (intval($fecha_init) <= time() && time() <= intval($fecha_finish))? true: false;
 	  						if($custom_fields['estado_postulacion']['value'] || true){
 	  						?>
-	  						<div class="convocatoria-container">
+	  						<div class="convocatoria-container" data-link="<?php echo get_permalink(); ?>">
 								<div class="label" style="display:block;"><?php if($is_active){ echo 'Abierta'; } else { echo 'Cerrada'; }?></div>
 								<div class="image" style="background-image: url('<?php echo $custom_fields['imagen_postulacion']['value']['url']; ?>');"></div>
 								<!-- <div class="description" style="background: <?php echo $custom_fields['color_postulacion']['value']; ?>">

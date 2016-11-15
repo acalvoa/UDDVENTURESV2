@@ -5,7 +5,7 @@
 *	@autor Angelo Calvo Alfaro
 *	@date 24/07/2015
 */
-require "../lib/lessphp/lessc.inc.php";
+require dirname(__FILE__)."/../../../../UDDBASESTYLE/lib/lessphp/lessc.inc.php";
 // DEFINIMOS LAS CABECERAS PARA QUE SEA  UN CSS
 header("Content-type: text/css", true);
 $less = new lessc();

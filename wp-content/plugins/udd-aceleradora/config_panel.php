@@ -30,7 +30,7 @@ window.send_to_editor = function(html) {
             ?>
             <p>
               <label for="landing-loader">Imagen de Portada</label><br>
-              <input type="text" name="landing-img" value="<?php echo get_aceleradora_image();?>">
+              <input type="text" name="landing-img" value="<?php echo get_landing_aceleradora_image();?>">
               <input type="button" objof="landing-img" class="upload_image_button" value="Seleccionar Imagen">
             </p>
             <p>

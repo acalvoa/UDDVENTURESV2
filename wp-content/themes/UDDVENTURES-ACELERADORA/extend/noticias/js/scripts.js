@@ -37,6 +37,11 @@
 		$(".EXTEND_noticias .noticia_article .social i").on('click',function(){
 			window.open($(this).attr('data-social'),"_blank", "height=500,width=700");
 		});
+		$(".EXTEND_noticias .pagination-item").on('click', function(){
+			$(".noticias-box").hide();
+			$(".noticias-box[data-pagination='"+$(this).attr('data-pagination')+"']").show();
+			$('body').scrollTop(0);
+		});
 	});
 	
 })(jQuery, this);

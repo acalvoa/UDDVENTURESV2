@@ -6,6 +6,18 @@
 		
 		// DOM ready, take it away
 		$.ENTORNO = "/aceleradora/"
+		
+		function URL(){
+			return document.URL;
+		}
+		$(document).on('ready', function(){
+			if(URL().indexOf('#convocatorias') != 1){
+				setTimeout(function(){
+					var top = $("#convocatorias").offset().top - 158;
+					$('body').scrollTop(top);
+				},100);
+			}
+		});
 		var elementos = $(".slider-element");
 		var bounces = $(".bounces")
 		$(elementos[0]).css({'opacity':1, 'z-index':8});

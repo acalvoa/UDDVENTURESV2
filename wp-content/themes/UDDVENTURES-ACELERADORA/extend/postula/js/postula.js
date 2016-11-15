@@ -16,7 +16,7 @@
 				location.href = $(this).attr('data-link');
 			}
 		});
-		$(".EXTEND_postula .postula_article .link").on('click',function(){
+		$(".EXTEND_postula .convocatoria-container").on('click',function(){
 			if($(this).attr('data-link') != "NOTLINK"){
 				location.href = $(this).attr('data-link');
 			}

@@ -29,7 +29,12 @@
 			cursor: pointer;
 		}
 	}
+	.noticias-indexador{
+		padding-right: 15px;
+		padding-left: 15px;
+	}
 	.noticias{
+
 		.left{
 			margin-top: 0px;
 			height: 294px;
@@ -130,6 +135,10 @@
 				max-height: 280px !important;
 			}
 		}
+		.noticias-box{
+			padding-left: 15px !important;
+			padding-bottom: 15px !important;
+		}
 		.newscontainer{
 			overflow: hidden;
 			padding-top: 20px;
@@ -158,7 +167,32 @@
 		}
 		.newcol{
 			margin-top: 0px;
-			width: 20%;
+			width: 25%;
+			height: 470px;
+			@media (max-width: 1200px){
+				width: 33.3%;
+				height: 400px;
+			}
+			@media (max-width: 992px){
+				width: 33.3% !important;
+				height: 350px;
+			}
+			@media (max-width: 750px){
+				width: 50% !important;
+				height: 350px;
+			}
+			@media (min-device-width: 320px) and (max-device-width: 420px){
+				width: 15%;
+				min-height: 223px !important;
+				max-height: 223px !important;
+			}
+			@media (min-device-width: 560px) and (max-device-width: 740px){
+				
+			}
+			@media (min-device-width: 768px) and (max-device-width: 900px){
+				min-height: 280px !important;
+				max-height: 280px !important;
+			}
 			float: left;
 			padding-bottom: 20px;
 			padding-left: 5px;
@@ -316,7 +350,9 @@
 				}
 			}
 			.image-index{
-				max-height: 284px;
+				height: 284px;
+				background-size: cover;
+				background-position: center center;
 				overflow: hidden;
 				@media (max-width: 1200px){
 					max-height: 262px;
@@ -325,7 +361,7 @@
 					max-height: 197px;
 				}
 				@media (max-width: 750px){
-					max-height: 127px;
+					max-height: 197px;
 				}
 				img{
 					width: 100%;
@@ -389,8 +425,7 @@
 				}
 				.title{
 					font-size: 12px;
-					min-height: 80px;
-					max-height: 80px;
+					height: 100%;
 					overflow: hidden;
 					@media (min-device-width: 320px) and (max-device-width: 420px){
 						font-size: 9px;
@@ -430,6 +465,15 @@
 				}
 			}
 		}
+	}
+	.noticias-items{
+		margin-top: 20px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.noticias-container{
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 	.noticia_article{
 		min-height: 804px;

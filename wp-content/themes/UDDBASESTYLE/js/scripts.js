@@ -6,7 +6,6 @@
 		function URL(){
 			return document.URL;
 		}
-
 		// DOM ready, take it away
 		$(".submenu-top li").on('click', function(){
 		});
@@ -22,6 +21,9 @@
 		$(".postula-link").on('click',function(){
 			var top = $("#convocatorias").offset().top - 158;
 			$('body').scrollTop(top);
+		});
+		$("#postula-link-especial").on('click',function(){
+			location.href = $.ENTORNO+"/#convocatorias";
 		});
 		$(".nosotros-link").on('click',function(){
 			location.href = $.ENTORNO+"/ventures/";
@@ -42,8 +44,7 @@
 			location.href = $.ENTORNO+"/contacto/";
 		});
 		$("#noticias-link").on('click',function(){
-			var top = $("#noticias").offset().top - 158;
-			$('body').scrollTop(top);
+			location.href = $.ENTORNO+"/noticias/";
 		});
 		$(".faq-link").on('click',function(){
 			location.href = $.ENTORNO+"/faq/";

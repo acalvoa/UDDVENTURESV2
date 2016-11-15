@@ -2,16 +2,14 @@
 	<div class="container-fluid header">
 	<div class="container">
 			<div class="row">
-				<div class=" col-sm-offset-2 col-md-offset-1 col-lg-offset-1 col-xs-12 col-sm-10 col-md-10 col-lg-10">
-					<ul>
-						<a href="http://www.udd.cl"><li><i class="fa fa-angle-double-right"></i> Portal UDD</li></a>
-						<a href="http://www.udd.cl/futuros-alumnos/pregrado/"><li><i class="fa fa-angle-double-right"></i> Carreras</li></a>
-						<a href="http://www.udd.cl/admision/"><li><i class="fa fa-angle-double-right"></i> Admisión</li></a>
-						<a href="http://www.udd.cl/futuros-alumnos/postgrado/"><li><i class="fa fa-angle-double-right"></i> Postgrados</li></a>
-						<a href="http://www.udd.cl/futuros-alumnos/extension-y-capacitacion/"><li><i class="fa fa-angle-double-right"></i> Extensión</li></a>
-						<a href="http://www.udd.cl/por-que-la-udd/investigacion/"><li><i class="fa fa-angle-double-right"></i> Investigación</li></a>
-						<a href="http://www.udd.cl/relaciones-internacionales/"><li><i class="fa fa-angle-double-right"></i> Internacional</li></a>
-					</ul>
+				<div class="topmenu col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<a href="http://www.udd.cl"><li><i class="fa fa-angle-double-right"></i> Portal UDD</li></a>
+					<a href="http://www.udd.cl/futuros-alumnos/pregrado/"><li><i class="fa fa-angle-double-right"></i> Carreras</li></a>
+					<a href="http://www.udd.cl/admision/"><li><i class="fa fa-angle-double-right"></i> Admisión</li></a>
+					<a href="http://www.udd.cl/futuros-alumnos/postgrado/"><li><i class="fa fa-angle-double-right"></i> Postgrados</li></a>
+					<a href="http://www.udd.cl/futuros-alumnos/extension-y-capacitacion/"><li><i class="fa fa-angle-double-right"></i> Extensión</li></a>
+					<a href="http://www.udd.cl/por-que-la-udd/investigacion/"><li><i class="fa fa-angle-double-right"></i> Investigación</li></a>
+					<a href="http://www.udd.cl/relaciones-internacionales/"><li><i class="fa fa-angle-double-right"></i> Internacional</li></a>
 				</div>
 			</div>
 		</div>
@@ -41,7 +39,7 @@
 				<div class="col-xs-2 visible-xs-block mobile-menu">
 					<i class="fa fa-bars" aria-hidden="true"></i>
 				</div>
-				<div class="menu-mobile visible-xs-block">
+				<div class="menu-mobile">
 					<div class="control">
 						<div class="center">
 							<i class="fa fa-angle-right"></i>
@@ -63,10 +61,10 @@
 				<div class="header-link pull-right visible-sm-block visible-md-block visible-lg-block" style="text-align:right">
 					<ul class="submenu-top">
 						<!-- <li><a class="faq-link" id="faq-link">FAQ'S</a></li> -->
-						<li id="postula-link"><a class="postula-link">CONVOCATORIAS</a></li>
+						<li id="postula-link-especial"><a >CONVOCATORIAS</a></li>
 						<li><a class="contacto-link" id="contacto-link">CONTACTO</a></li>
 						<li><a class="equipo-link" id="equipo-link">EQUIPO</a></li>
-						<li><a class="quehacemos-link" id="quehacemos-link">QU&Eacute; HACEMOS</a></li>
+						<li><a class="quehacemos-link">QU&Eacute; HACEMOS</a></li>
 						<li><i class="fa fa-search busqueda"></i></li>
 					</ul>
 				</div>

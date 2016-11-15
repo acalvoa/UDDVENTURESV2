@@ -1,4 +1,4 @@
-		<?php include("base/partial/footer.php"); ?>
+		<?php include(dirname(__FILE__)."/../UDDBASESTYLE/partial/footer.php"); ?>
 
 		<!-- analytics -->
 		<script>

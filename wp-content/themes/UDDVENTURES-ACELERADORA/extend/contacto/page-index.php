@@ -10,10 +10,16 @@
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 conrow">
 			<div class="row contactorow">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contacto-items">
-					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 contact-row">
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 contact-row">
 						<?php echo do_shortcode('[contact-form-7 id="71" title="Contact form 1"]'); ?>
 					</div>
-					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 maparow">
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 rss-content">
+						<a href="http://www.facebook.com/uddventures"><div class="rss facebook"><i class="fa fa-facebook" aria-hidden="true"></i></div></a>
+						<a href="http://www.twitter.com/uddventures"><div class="rss facebook"><i class="fa fa-twitter" aria-hidden="true"></i></div></a>
+						<a href="https://www.youtube.com/channel/UCYv7zskLlqv74gJ7sQh25og"><div class="rss facebook"><i class="fa fa-youtube" aria-hidden="true"></i></div></a>
+						<a href="https://www.linkedin.com/groups/4987033"><div class="rss facebook"><i class="fa fa-linkedin" aria-hidden="true"></i></div></a>
+					</div>
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 maparow">
 						<div id="mapa"></div>
 					</div>
 
@@ -30,10 +36,6 @@
 					(56 41) 226 8610<br>
 					Ainavillo 456.<br>
 					Concepción
-				</div>
-				<div class="row social_networks">
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title">COMPARTIR</div>
-					<div class="content social" ><i class="fa fa-twitter-square" data-social="http://twitter.com/home?status=<?php echo urlencode(get_the_title()); ?>+<?php echo urlencode(get_permalink()); ?>"></i><i class="fa fa-facebook-official" data-social="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_permalink()); ?>&title=<?php echo urlencode(get_the_title()); ?>"></i></div>
 				</div>
 			</div>
 		</div>

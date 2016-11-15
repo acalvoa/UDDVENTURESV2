@@ -1,22 +1,18 @@
 <section class="EXTEND_noticias" id="noticias">
-	<div class="container" id="news-folder">
+	<div class="container-fluid noticias-container" id="news-folder">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div class="header">NOTICIAS</div>
 			</div>
 		</div>
-		<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 left-back"><h2><i class="fa fa-angle-left"></i></h2></div>
-		<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 postulaciones-items">
-			<div class="row move_control">
-				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 control left"><h2><i class="fa fa-angle-left"></i></h2></div>
-				<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10"></div>
-				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 control right"><h2><i class="fa fa-angle-right"></i></h2></div>
-			</div>
-			<div class="row noticias">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noticias-items">
+			<div class="row noticias noticias-indexador">
 				<?php
 					$args=array(
 					  'post_type' => 'noticias',
-					  'post_status' => 'publish'
+					  'post_status' => 'publish',
+					  'numberposts' => -1,
+					  'posts_per_page' => -1
 					);
 					$my_query = new WP_Query($args);
 					$numero = 0;
@@ -25,15 +21,14 @@
 	  						$my_query->the_post();
 	  						$custom_fields = get_field_objects();
 	  						?>
-	  						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 newcol" data-pagination="<?php echo floor($numero/9)+1; ?>" style="<?php if((floor($numero/9)+1) > 1) echo 'display:none;'; ?>">
-								<div class="image-index" data-link="<?php echo get_permalink(); ?>">
-									<img src="<?php echo $custom_fields['imagen_noticia']['value']['url']; ?>" />
+	  						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 newcol noticias-box" data-pagination="<?php echo floor($numero/12)+1; ?>" style="<?php if((floor($numero/12)+1) > 1) echo 'display:none;'; ?>">
+								<div class="image-index" data-link="<?php echo get_permalink(); ?>" style="background-image: url('<?php echo $custom_fields['imagen_noticia']['value']['url']; ?>');">
 									<div class="background"><div>VER MAS</div></div>
 								</div>
 								<div class="content">
 									<div class="date"><?php echo $custom_fields['fecha_noticia']['value'];?></div>
-									<div class="title"><h4><?php echo get_the_title(); ?></h4></div>
-									<div class="resumen"><?php echo $custom_fields['resumen_noticia']['value'];?></div>
+									<div class="title"><h4><b><?php echo get_the_title(); ?></b></h4></div>
+									<!-- <div class="resumen"><?php echo $custom_fields['resumen_noticia']['value'];?></div> -->
 								</div>
 							</div>
 	  						<?php	  
@@ -42,32 +37,19 @@
 					}
 					wp_reset_query();// Restore global post data stomped by the_post().
 				?>
-				
-				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 newcol"></div>
-				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 newcol"></div>
 			</div>
 			<div class="row pagination-control move_control">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 control ">
 					<nav>
 					  <ul class="pagination">
-					    <li>
-					      <a aria-label="Previous" class="left">
-					        <span aria-hidden="true">&laquo;</span>
-					      </a>
-					    </li>
 					    <?php 
-					    	$tabs = floor($numero/6)+1;
+					    	$tabs = floor($numero/12)+1;
 					    	for($i=1;$i<=$tabs;$i++){
 					    ?>
 					    	<li><a class="pagination-item" data-pagination="<?php echo $i; ?>"><?php echo $i; ?></a></li>
 					    <?php 
 					    	}
 					    ?>
-					    <li>
-					      <a aria-label="Next" class="right">
-					        <span aria-hidden="true">&raquo;</span>
-					      </a>
-					    </li>
 					  </ul>
 					</nav>
 				</div>

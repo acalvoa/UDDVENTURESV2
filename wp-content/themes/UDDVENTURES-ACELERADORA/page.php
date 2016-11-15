@@ -1,5 +1,6 @@
 <?php
 	get_header(); 
+	
 	function URL(){
 		$url=$_SERVER['REQUEST_URI'];
 		return $url;
@@ -12,9 +13,13 @@
 	<?php include("extend/space/index_w.php");?>
 	<?php 
 		if(strpos($url, '/aceleradora/noticias/') === 0){
-			include("extend/noticias/post.php");
+			include("extend/noticias/page-index.php");
+		}
+		else if(strpos($url, '/aceleradora/equipo-aceleradora-de-negocios-udd-ventures/') === 0){
+			include("extend/quiensomos/page-index.php");
 		}
 		else if(strpos($url, '/aceleradora/convocatorias/') === 0){
+
 			include("extend/postula/post.php");
 		}
 		else if(strpos($url, '/aceleradora/que-hacemos')  === 0){ //LISTO

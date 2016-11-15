@@ -1,24 +1,8 @@
 <section class="EXTEND_redes" id="redes">
-	<div class="container" id="news-folder">
+	<div class="container-cluid" id="news-folder">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<div class="header">QUIÉNES SOMOS</div>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<div class="subheader">
-				<?php 
-					$numero = 1;
-					$category = array();
-					$taxonomies = get_object_taxonomies('quiensomos');
-					$taxonomies = get_terms($taxonomies[0]);
-					foreach ( $taxonomies  as $taxonomy) {
-						$category[] = $taxonomy->name;
-					?>
-					    <div class="tipos <?php if($numero++ === 1) echo 'active'; ?>" data-id="<?php echo $taxonomy->name; ?>"><?php echo $taxonomy->name; ?></div>
-					<?php
-					}
-				?>
-				</div>
+				<div class="header">EQUIPO</div>
 			</div>
 		</div>
 			<?php

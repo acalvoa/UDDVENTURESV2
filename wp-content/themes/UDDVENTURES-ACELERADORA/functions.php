@@ -573,31 +573,31 @@ function create_vitrina() {
 /* ADMIN PANEL */
 function edit_admin_menus() {
     global $menu;
-    remove_menu_page('index.php');
-    remove_menu_page('edit.php?post_type=page');
-    remove_menu_page('upload.php');
-    remove_menu_page('edit.php');
-    remove_menu_page('edit-comments.php');
-    remove_menu_page('edit.php?post_type=acf');
-    remove_menu_page('tools.php');
+    // remove_menu_page('index.php');
+    // remove_menu_page('edit.php?post_type=page');
+    // remove_menu_page('upload.php');
+    // remove_menu_page('edit.php');
+    // remove_menu_page('edit-comments.php');
+    // remove_menu_page('edit.php?post_type=acf');
+    // remove_menu_page('tools.php');
 }
 add_action( 'admin_menu', 'edit_admin_menus' );
 function remove_acf_menu()
 {
 
-    // provide a list of usernames who can edit custom field definitions here
-    $admins = array( 
-        'admin'
-    );
+    // // provide a list of usernames who can edit custom field definitions here
+    // $admins = array( 
+    //     'admin'
+    // );
 
-    // get the current user
-    $current_user = wp_get_current_user();
+    // // get the current user
+    // $current_user = wp_get_current_user();
 
-    // match and remove if needed
-    if( !in_array( $current_user->user_login, $admins ) )
-    {
-        remove_menu_page('edit.php?post_type=acf');
-    }
+    // // match and remove if needed
+    // if( !in_array( $current_user->user_login, $admins ) )
+    // {
+    //     remove_menu_page('edit.php?post_type=acf');
+    // }
 
 }
 add_action( 'admin_menu', 'remove_acf_menu', 999 );
